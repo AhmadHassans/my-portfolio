@@ -884,6 +884,13 @@ strong { color: var(--text); font-weight: 600; }
   gap: 24px;
 }
 
+.projects-grid .project-card:nth-child(4) {
+  grid-column: 1 / 2;
+}
+.projects-grid .project-card:nth-child(5) {
+  grid-column: 2 / 3;
+}
+
 .project-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
