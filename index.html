@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. Ahmad Hassan | Flutter Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>MAH<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div class="glow glow-3"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name">
+          M. Ahmad<br><span class="name-accent">Hassan</span>
+        </h1>
+
+        <div class="hero-title-wrap">
+          <h2 class="hero-title">
+            Flutter &amp; Dart Developer
+            <span class="title-sep">|</span>
+            Cross-Platform App Expert
+          </h2>
+        </div>
+
+        <p class="hero-desc">
+          Building clean, high-performance mobile apps that run natively on iOS &amp; Android —
+          from a single, elegant codebase. BS graduate. Ready to ship.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary btn-lg">
+            <i class="fas fa-rocket"></i> See My Projects
+          </a>
+          <a href="cv.pdf" class="btn btn-outline btn-lg" download>
+            <i class="fas fa-file-arrow-down"></i> Get My CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-lbl">Apps Shipped</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-lbl">Years Flutter</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat">
+            <span class="stat-num">iOS &amp; Android</span>
+            <span class="stat-lbl">Both Platforms</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="phone-wrap">
+          <div class="phone-glow"></div>
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="app-statusbar">9:41</div>
+              <div class="app-bar">
+                <span class="app-bar-title">Wrapify</span>
+                <span class="app-bar-icon">🎁</span>
+              </div>
+              <div class="app-search-bar"></div>
+              <div class="app-section-label">Featured</div>
+              <div class="app-cards-row">
+                <div class="app-card big"></div>
+                <div class="app-card big alt"></div>
+              </div>
+              <div class="app-section-label">Popular</div>
+              <div class="app-cards-row">
+                <div class="app-card small"></div>
+                <div class="app-card small alt"></div>
+                <div class="app-card small third"></div>
+              </div>
+              <div class="app-bottom-nav">
+                <span class="nav-dot active">⊞</span>
+                <span class="nav-dot">♡</span>
+                <span class="nav-dot">🛒</span>
+                <span class="nav-dot">👤</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="float-badge fb-flutter">
+          <div class="fb-icon flutter-icon-badge">✦</div>
+          <span>Flutter</span>
+        </div>
+        <div class="float-badge fb-dart">
+          <div class="fb-icon dart-icon-badge">◆</div>
+          <span>Dart</span>
+        </div>
+        <div class="float-badge fb-firebase">
+          <div class="fb-icon fire-icon-badge">🔥</div>
+          <span>Firebase</span>
+        </div>
+        <div class="float-badge fb-ios">
+          <i class="fab fa-apple"></i>
+          <span>iOS Ready</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// about me</span>
+        <h2 class="section-title">Professional Background</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Fresh <strong>BS Computer Science</strong> graduate with a sharp focus on
+            <strong>cross-platform mobile development</strong>. I build apps that feel native —
+            smooth, fast, and intuitive — using Flutter and Dart as my primary stack.
+          </p>
+          <p>
+            My dev environment runs on <strong>macOS (Apple M1)</strong>, giving me native access
+            to Xcode, iPhone Simulators, and the full iOS toolchain. I develop, test, and
+            optimize for both iOS and Android without compromise.
+          </p>
+          <p>
+            I care about <strong>clean architecture</strong>, readable code, and delivering
+            apps users actually enjoy. Whether it's a startup MVP or production feature —
+            I ship it right.
+          </p>
+
+          <div class="highlights">
+            <div class="highlight">
+              <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <strong>BS Computer Science</strong>
+                <span>Recent Graduate</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon"><i class="fab fa-apple"></i></div>
+              <div>
+                <strong>macOS M1 Developer</strong>
+                <span>Xcode &amp; iPhone Simulator</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon"><i class="fas fa-mobile-screen"></i></div>
+              <div>
+                <strong>Cross-Platform Expert</strong>
+                <span>iOS &amp; Android — one codebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-card reveal">
+          <div class="code-header">
+            <div class="code-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="code-filename">developer.dart</span>
+          </div>
+          <pre class="code-body"><code><span class="kw">class</span> <span class="cls">AhmadHassan</span> <span class="kw">extends</span> <span class="cls">Developer</span> {
+
+  <span class="kw">final</span> <span class="typ">String</span> role =
+    <span class="str">'Flutter Developer'</span>;
+
+  <span class="kw">final</span> <span class="typ">List</span>&lt;<span class="typ">String</span>&gt; stack = [
+    <span class="str">'Flutter'</span>, <span class="str">'Dart'</span>,
+    <span class="str">'Firebase'</span>, <span class="str">'REST APIs'</span>,
+    <span class="str">'Provider'</span>,
+  ];
+
+  <span class="kw">final</span> <span class="typ">bool</span> openToWork = <span class="bool">true</span>;
+  <span class="kw">final</span> <span class="typ">String</span> platform = <span class="str">'iOS &amp; Android'</span>;
+
+  <span class="typ">String</span> greet() =&gt; <span class="str">"Let's build something great!"</span>;
+
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// tech stack</span>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Core -->
+        <div class="skill-cat reveal">
+          <h3 class="skill-cat-title">
+            <i class="fas fa-layer-group"></i> Core Stack
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item" data-pct="90">
+              <div class="skill-icon-badge flutter-badge">F</div>
+              <div class="skill-details">
+                <div class="skill-top">
+                  <span class="skill-name">Flutter</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill flutter-fill" style="--w:90%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item" data-pct="88">
+              <div class="skill-icon-badge dart-badge">D</div>
+              <div class="skill-details">
+                <div class="skill-top">
+                  <span class="skill-name">Dart</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill dart-fill" style="--w:88%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item" data-pct="80">
+              <div class="skill-icon-badge firebase-badge">🔥</div>
+              <div class="skill-details">
+                <div class="skill-top">
+                  <span class="skill-name">Firebase</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill firebase-fill" style="--w:80%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item" data-pct="82">
+              <div class="skill-icon-badge api-badge">⚡</div>
+              <div class="skill-details">
+                <div class="skill-top">
+                  <span class="skill-name">API Integration</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill api-fill" style="--w:82%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-item" data-pct="85">
+              <div class="skill-icon-badge provider-badge">P</div>
+              <div class="skill-details">
+                <div class="skill-top">
+                  <span class="skill-name">Provider (State)</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill provider-fill" style="--w:85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-cat reveal">
+          <h3 class="skill-cat-title">
+            <i class="fas fa-screwdriver-wrench"></i> Dev Tools
+          </h3>
+          <div class="tools-grid">
+            <div class="tool-pill">
+              <i class="fab fa-apple"></i>
+              <div class="tool-text">
+                <span>Xcode</span>
+                <small>iOS builds &amp; sim</small>
+              </div>
+            </div>
+            <div class="tool-pill">
+              <i class="fab fa-android"></i>
+              <div class="tool-text">
+                <span>Android Studio</span>
+                <small>Android dev</small>
+              </div>
+            </div>
+            <div class="tool-pill">
+              <i class="fas fa-code"></i>
+              <div class="tool-text">
+                <span>VS Code</span>
+                <small>Daily driver</small>
+              </div>
+            </div>
+            <div class="tool-pill">
+              <i class="fab fa-git-alt"></i>
+              <div class="tool-text">
+                <span>Git</span>
+                <small>Version control</small>
+              </div>
+            </div>
+            <div class="tool-pill">
+              <i class="fab fa-github"></i>
+              <div class="tool-text">
+                <span>GitHub</span>
+                <small>Collaboration</small>
+              </div>
+            </div>
+            <div class="tool-pill">
+              <i class="fas fa-microchip"></i>
+              <div class="tool-text">
+                <span>macOS M1</span>
+                <small>Dev machine</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="platform-badges">
+            <div class="platform-badge ios">
+              <i class="fab fa-apple"></i> iOS
+            </div>
+            <div class="platform-badge android">
+              <i class="fab fa-android"></i> Android
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// my work</span>
+        <h2 class="section-title">Key Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Wrapify -->
+        <div class="project-card featured reveal">
+          <div class="project-num">01</div>
+          <div class="project-top">
+            <div class="project-emoji">🎁</div>
+            <div class="project-tags">
+              <span class="tag">E-Commerce</span>
+              <span class="tag">Flutter</span>
+              <span class="tag featured-tag">Featured</span>
+            </div>
+          </div>
+          <h3 class="project-name">Wrapify</h3>
+          <p class="project-desc">
+            E-commerce platform for customizable gift hampers. Users browse, personalize, and
+            order curated packages. Features product catalog, cart management, order tracking,
+            and Firebase backend — all cross-platform via Flutter.
+          </p>
+          <div class="project-tech-stack">
+            <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Provider</span>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <!-- Covid Tracker -->
+        <div class="project-card reveal">
+          <div class="project-num">02</div>
+          <div class="project-top">
+            <div class="project-emoji">📊</div>
+            <div class="project-tags">
+              <span class="tag">Data Viz</span>
+              <span class="tag">API</span>
+            </div>
+          </div>
+          <h3 class="project-name">Covid-19 Tracker</h3>
+          <p class="project-desc">
+            Real-time statistics app with live REST API integration and interactive data
+            visualization. Displays global and country-specific stats with dynamic charts
+            and a clean, responsive UI.
+          </p>
+          <div class="project-tech-stack">
+            <span>Flutter</span><span>REST API</span><span>Charts</span><span>Dart</span>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <!-- Smart Calculator -->
+        <div class="project-card reveal">
+          <div class="project-num">03</div>
+          <div class="project-top">
+            <div class="project-emoji">🧮</div>
+            <div class="project-tags">
+              <span class="tag">Utility</span>
+              <span class="tag">Flutter</span>
+            </div>
+          </div>
+          <h3 class="project-name">Smart Calculator</h3>
+          <p class="project-desc">
+            Feature-rich calculator with clean Material Design UI, expression parsing,
+            and operation history. Demonstrates Flutter's widget composition and Provider
+            state management in a polished, production-quality app.
+          </p>
+          <div class="project-tech-stack">
+            <span>Flutter</span><span>Dart</span><span>Provider</span>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link">
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// let's connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-wrap reveal">
+        <div class="contact-left">
+          <p class="contact-headline">
+            Open to full-time roles &amp; freelance contracts.
+          </p>
+          <p class="contact-sub">
+            Need a Flutter developer who ships clean, production-ready apps on iOS and
+            Android? Let's talk. I respond within 24 hours.
+          </p>
+          <a href="mailto:ahmadhassansam2002@gmail.com" class="btn btn-primary btn-lg">
+            <i class="fas fa-envelope"></i> Send Email
+          </a>
+          <div class="contact-detail">
+            <i class="fas fa-envelope-open"></i>
+            ahmadhassansam2002@gmail.com
+          </div>
+        </div>
+
+        <div class="social-cards">
+          <a href="#" class="social-card" aria-label="LinkedIn">
+            <div class="social-icon linkedin-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="social-info">
+              <span class="social-name">LinkedIn</span>
+              <small>Professional network</small>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+
+          <a href="#" class="social-card" aria-label="GitHub">
+            <div class="social-icon github-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="social-info">
+              <span class="social-name">GitHub</span>
+              <small>See my code</small>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+
+          <a href="#" class="social-card" aria-label="Upwork">
+            <div class="social-icon upwork-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="social-info">
+              <span class="social-name">Upwork</span>
+              <small>Hire me freelance</small>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square social-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>MAH<span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-copy">M. Ahmad Hassan &middot; Flutter Developer &middot; 2024</p>
+        <p class="footer-sub">Built for opportunity. Ready to ship.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
