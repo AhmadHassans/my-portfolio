@@ -778,11 +778,12 @@ strong { color: var(--text); font-weight: 600; }
   flex-shrink: 0;
 }
 
-.flutter-badge { background: linear-gradient(135deg, #54C5F8, #02569B); color: #fff; }
-.dart-badge    { background: linear-gradient(135deg, #00BCD4, #006064); color: #fff; }
-.firebase-badge{ background: rgba(251,146,60,.15); font-size: 1.1rem; }
-.api-badge     { background: rgba(167,139,250,.15); font-size: 1.1rem; }
-.provider-badge{ background: linear-gradient(135deg, #a78bfa, #7c3aed); color: #fff; }
+.flutter-badge  { background: linear-gradient(135deg, #54C5F8, #02569B); color: #fff; }
+.dart-badge     { background: linear-gradient(135deg, #00BCD4, #006064); color: #fff; }
+.firebase-badge { background: rgba(251,146,60,.15); font-size: 1.1rem; }
+.api-badge      { background: rgba(167,139,250,.15); font-size: 1.1rem; }
+.provider-badge { background: linear-gradient(135deg, #a78bfa, #7c3aed); color: #fff; }
+.bloc-badge     { background: linear-gradient(135deg, #f59e0b, #b45309); color: #fff; }
 
 .skill-details { flex: 1; }
 
@@ -813,6 +814,7 @@ strong { color: var(--text); font-weight: 600; }
 .firebase-fill { background: linear-gradient(90deg, #e65100, #fb923c); }
 .api-fill      { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
 .provider-fill { background: linear-gradient(90deg, #9333ea, #c084fc); }
+.bloc-fill     { background: linear-gradient(90deg, #b45309, #f59e0b); }
 
 /* Tools Grid */
 .tools-grid {
