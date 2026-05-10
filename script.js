@@ -1,4 +1,62 @@
 // ============================================================
+// PAGE LOADER
+// ============================================================
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const loader = document.getElementById('pageLoader');
+    if (loader) loader.classList.add('hidden');
+  }, 1200);
+});
+
+// ============================================================
+// SCROLL PROGRESS BAR
+// ============================================================
+const progressBar = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = (scrollTop / docHeight) * 100;
+  if (progressBar) progressBar.style.width = pct + '%';
+});
+
+// ============================================================
+// CONTACT FORM
+// ============================================================
+const contactForm = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = contactForm.querySelector('.form-submit');
+    const btnText = btn.querySelector('span');
+    btn.classList.add('loading');
+    btnText.textContent = 'Sending...';
+
+    try {
+      const res = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        contactForm.reset();
+        formSuccess.classList.add('show');
+        btnText.textContent = 'Send Message';
+        btn.classList.remove('loading');
+        setTimeout(() => formSuccess.classList.remove('show'), 5000);
+      } else {
+        throw new Error();
+      }
+    } catch {
+      btnText.textContent = 'Failed — try email';
+      btn.classList.remove('loading');
+      setTimeout(() => { btnText.textContent = 'Send Message'; }, 3000);
+    }
+  });
+}
+
+// ============================================================
 // NAVBAR — scroll behavior + hamburger
 // ============================================================
 const navbar    = document.getElementById('navbar');

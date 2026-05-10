@@ -1180,6 +1180,207 @@ strong { color: var(--text); font-weight: 600; }
 .footer-sub  { font-size: .78rem; color: var(--text-3); opacity: .6; }
 
 /* ============================================================
+   PAGE LOADER
+   ============================================================ */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  transition: opacity .5s ease, visibility .5s ease;
+}
+.page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader-logo {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+  animation: loaderPulse 1s ease-in-out infinite alternate;
+}
+@keyframes loaderPulse {
+  from { opacity: .4; }
+  to   { opacity: 1; }
+}
+.loader-bar {
+  width: 160px; height: 3px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+.loader-bar::after {
+  content: '';
+  position: absolute;
+  left: -100%; top: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 999px;
+  animation: loaderFill 1.2s ease forwards;
+}
+@keyframes loaderFill {
+  to { left: 0; }
+}
+
+/* ============================================================
+   SCROLL PROGRESS BAR
+   ============================================================ */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  z-index: 200;
+  transition: width .1s linear;
+  box-shadow: 0 0 10px rgba(84,197,248,.5);
+}
+
+/* ============================================================
+   WHATSAPP FLOATING BUTTON
+   ============================================================ */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 32px; right: 32px;
+  width: 58px; height: 58px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: #fff;
+  z-index: 150;
+  box-shadow: 0 4px 20px rgba(37,211,102,.4);
+  transition: var(--t);
+}
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(37,211,102,.6);
+}
+.whatsapp-btn:hover .wa-tooltip { opacity: 1; transform: translateX(0); }
+
+.wa-tooltip {
+  position: absolute;
+  right: 70px;
+  background: #111827;
+  color: var(--text);
+  font-size: .82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: var(--t);
+  border: 1px solid var(--border);
+  pointer-events: none;
+}
+.wa-tooltip::after {
+  content: '';
+  position: absolute;
+  right: -6px; top: 50%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-right: none;
+  border-left-color: var(--border);
+}
+
+/* ============================================================
+   CONTACT FORM
+   ============================================================ */
+.contact-form {
+  margin-bottom: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.form-group:last-child { margin-bottom: 0; }
+
+.form-group label {
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.form-group input,
+.form-group textarea {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 13px 16px;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: .93rem;
+  outline: none;
+  transition: var(--t);
+  resize: none;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  background: var(--bg-card-h);
+  box-shadow: 0 0 0 3px rgba(84,197,248,.1);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-3);
+}
+
+.form-submit {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 14px;
+  position: relative;
+}
+.form-submit.loading { opacity: .7; pointer-events: none; }
+
+.form-success {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  color: var(--green);
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 12px 16px;
+  background: rgba(74,222,128,.08);
+  border: 1px solid rgba(74,222,128,.2);
+  border-radius: 10px;
+}
+.form-success.show { display: flex; }
+
+.contact-details-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+@media (max-width: 640px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
    REVEAL ANIMATION
    ============================================================ */
 .reveal {

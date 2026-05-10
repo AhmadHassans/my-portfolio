@@ -4,11 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M. Ahmad Hassan | Flutter Developer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="M. Ahmad Hassan — Flutter & Dart Developer from Lahore, Pakistan. Building cross-platform iOS & Android apps with Clean Architecture, BLoC, Firebase. Available for freelance & full-time roles.">
+  <meta name="keywords" content="Flutter Developer, Dart Developer, Mobile App Developer, Cross-Platform, iOS Android, Firebase, BLoC, Lahore Pakistan, Freelance Flutter">
+  <meta name="author" content="Syed M. Ahmad Hassan">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (LinkedIn, WhatsApp, Facebook preview) -->
+  <meta property="og:title" content="M. Ahmad Hassan | Flutter Developer">
+  <meta property="og:description" content="Flutter & Dart Developer from Lahore. Cross-platform iOS & Android apps. Clean Architecture, BLoC, Firebase. Open to work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://my-portfolio-rose-nine-95.vercel.app">
+  <meta property="og:image" content="https://my-portfolio-rose-nine-95.vercel.app/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="M. Ahmad Hassan | Flutter Developer">
+  <meta name="twitter:description" content="Flutter & Dart Developer. Cross-platform iOS & Android. Open to work.">
+
+  <!-- Favicon (SVG inline) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d1117'/><text y='.9em' font-size='80' x='10'>✦</text></svg>">
+
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">
+      <span class="logo-bracket">&lt;</span>MAH<span class="logo-bracket">/&gt;</span>
+    </div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/923161473803?text=Hi%20Ahmad!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+     target="_blank" rel="noopener noreferrer"
+     class="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Let's Talk!</span>
+  </a>
 
   <!-- NAV -->
   <nav class="navbar" id="navbar">
@@ -648,12 +689,40 @@
             Need a Flutter developer who ships clean, production-ready apps on iOS and
             Android? Let's talk. I respond within 24 hours.
           </p>
-          <a href="mailto:ahmadhassansam2002@gmail.com" class="btn btn-primary btn-lg">
-            <i class="fas fa-envelope"></i> Send Email
-          </a>
-          <div class="contact-detail">
-            <i class="fas fa-envelope-open"></i>
-            ahmadhassansam2002@gmail.com
+
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpwzgkqb" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg form-submit">
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-circle-check"></i> Message sent! I'll reply within 24 hours.
+            </div>
+          </form>
+
+          <div class="contact-details-row">
+            <div class="contact-detail">
+              <i class="fas fa-envelope-open"></i>
+              ahmadhassansam2002@gmail.com
+            </div>
+            <div class="contact-detail">
+              <i class="fab fa-whatsapp"></i>
+              +92 316 1473803
+            </div>
           </div>
         </div>
 
@@ -702,7 +771,7 @@
         <div class="footer-logo">
           <span class="logo-bracket">&lt;</span>MAH<span class="logo-bracket">/&gt;</span>
         </div>
-        <p class="footer-copy">M. Ahmad Hassan &middot; Flutter Developer &middot; 2024</p>
+        <p class="footer-copy">M. Ahmad Hassan &middot; Flutter Developer &middot; 2025</p>
         <p class="footer-sub">Built for opportunity. Ready to ship.</p>
       </div>
     </div>
